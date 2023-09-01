@@ -14,136 +14,177 @@
 
 <body>
     <main>
-
+          
         <!-- Part 1 -->
         <div class="image-container">
-            <img src="tech.jpg" alt="Background Image">
+            <img src="images/tech.jpg" alt="Background Image">
             <div class="overlay-icon icon1">
-                <img src="icon1.png" alt="Icon Image" width="150" height="150">
+                <img src="images/icons/icon1.png" alt="Icon Image" width="150" height="150">
             </div>
-            <div class="overlay-icon icon2">
-                <img src="bird.png" alt="Another Icon Image" width="150" height="150">
-            </div>
+            
+            <button id="navbarToggle" class="navbar-toggle">
+                <i class="fas fa-bars"><img class="navBarIcon" src="images/icons/navbar.png"></i>
+            </button>
             
             <div class="overlay-text">
                 <p class="text1-1">WE WORK HARD, WE PLAY HARD</p>
                 <h1 class="text1-2">We Create</h1>
                 <h1 class="text1-2">Elegant Solutions</h1>
             </div>
+
+            <div class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#" id="loginLink">Login</a>
+            </div>
+
+            <div class="modal" id="loginModal">
+                <div class="modal-content">
+                    <span class="close-button" id="loginModalClose">&times;</span>
+                    <div class="background-container">
+                        <div class="login-container">
+                            <div class="button-container">
+                                <div class="centered-buttons">
+                                    <button class="toggle-button" id="signUpButton">Sign Up</button>
+                                    <button class="toggle-button" id="loginButton">Login</button>
+                                </div>
+                            </div>
+                            <div class="content" id="signUpContent">
+                                <h1 class="signUpText">Sign Up For Free</h1>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name:</label>
+                                            <input type="text" id="firstName" name="firstName" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name:</label>
+                                            <input type="text" id="lastName" name="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address:</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password:</label>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                    <div class="form-group button-group">
+                                        <button type="submit">Get Started</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content" id="loginContent">
+                                <h1 class="LoginText">Login</h1>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="loginEmail">Email Address:</label>
+                                        <input type="email" id="loginEmail" name="loginEmail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginPassword">Password:</label>
+                                        <input type="password" id="loginPassword" name="loginPassword" required>
+                                    </div>
+                                    <div class="form-group button-group">
+                                        <button type="submit">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
         </div>
 
         <!-- Part 2 -->
-        <figure>
-            <div class="image-section">
-                <h2 class="section-title">Explore some laptops to invest the future!</h2>
-                <div class="image-container-row">
-                    <div class="image-container2">
-                        <img src="laptop1.jpg" alt="tech image">
-                        <figcaption class="text2-1">Macbook</figcaption>
-                        <figcaption class="text2-2">Are you interested in investing in Apple Products?</figcaption>
-                        <a href="#" class="modal-link" data-modal-id="modal1">Find out more</a>
-                    </div>
-        
-                    <div class="image-container2">
-                        <img src="laptop2.jpg" alt="tech image">
-                        <figcaption class="text2-1">Dell Laptop</figcaption>
-                        <figcaption class="text2-2">Are you interested in expanding new work laptops?</figcaption>
-                        <a href="#" class="modal-link" data-modal-id="modal2">Find out more</a>
-                    </div>
-        
-                    <div class="image-container2">
-                        <img src="laptop3.jpg" alt="tech image">
-                        <figcaption class="text2-1">Acer Laptop</figcaption>
-                        <figcaption class="text2-2">Is gaming something you are considering and want to upgrade?</figcaption>
-                        <a href="#" class="modal-link" data-modal-id="modal3">Find out more</a>
-                    </div>
+        <div class="image-section">
+            <h2 class="section-title">Explore some laptops to invest in the future!</h2>
+            <div class="image-container-row">
+                <div class="image-container2">
+                    <img src="images/laptop1.jpg" alt="tech image">
+                    <figcaption class="text2-1">Macbook</figcaption>
+                    <figcaption class="text2-2">Are you interested in investing in Apple Products?</figcaption>
+                    <a href="#" class="modal-link1" data-modal-id="modal1-2">Find out more</a>
                 </div>
-            </div>
-        </figure>
-
-        <div class="modal" id="modal1">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h2>Macbook Details</h2>
-                <p>Details about the Macbook.</p>
-            </div>
-        </div>
-
-        <div class="modal" id="modal2">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h2>Dell Laptop Details</h2>
-                <p>Details about the Dell Laptop.</p>
-            </div>
-        </div>
-
-        <div class="modal" id="modal3">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h2>Acer Laptop Details</h2>
-                <p>Details about the Acer Laptop.</p>
-            </div>
-        </div>
-
-        <!-- Part 3 -->
-        <div class="background-container">
-            <div class="login-container">
-                <div class="button-container">
-                    <div class="centered-buttons">
-                        <button class="toggle-button" id="signUpButton">Sign Up</button>
-                        <button class="toggle-button" id="loginButton">Login</button>
-                    </div>
+    
+                <div class="image-container2">
+                    <img src="images/laptop2.jpg" alt="tech image">
+                    <figcaption class="text2-1">Dell Laptop</figcaption>
+                    <figcaption class="text2-2">Are you interested in expanding new work laptops?</figcaption>
+                    <a href="#" class="modal-link1" data-modal-id="modal2-2">Find out more</a>
                 </div>
-                <div class="content" id="signUpContent">
-                    <h1 class="signUpText">Sign Up For Free</h1>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name:</label>
-                                <input type="text" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name:</label>
-                                <input type="text" id="lastName" name="lastName" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" required>
-                        </div>
-                        <div class="form-group button-group">
-                            <button type="submit">Get Started</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="content" id="loginContent">
-                    <h1 class="LoginText">Login</h1>
-                    <form>
-                        <div class="form-group">
-                            <label for="loginEmail">Email Address:</label>
-                            <input type="email" id="loginEmail" name="loginEmail" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="loginPassword">Password:</label>
-                            <input type="password" id="loginPassword" name="loginPassword" required>
-                        </div>
-                        <div class="form-group button-group">
-                            <button type="submit">Login</button>
-                        </div>
-                    </form>
+    
+                <div class="image-container2">
+                    <img src="images/laptop3.jpg" alt="tech image">
+                    <figcaption class="text2-1">Acer Laptop</figcaption>
+                    <figcaption class="text2-2">Is gaming something you are considering and want to upgrade?</figcaption>
+                    <a href="#" class="modal-link1" data-modal-id="modal3-2">Find out more</a>
                 </div>
             </div>
         </div>
-        
-        
+    
+        <div class="modal2" id="modal1-2">
+            <div class="modal-content2">
+                <span class="close-button2">&times;</span>
+                <div class="modal-body">
+                    <img src="images/macbook.jpg" alt="Macbook Image" class="product-image">
+                    <div class="product-description">
+                        <h2>Macbook Pro $1200</h2>
+                        <p>A MacBook is a sleek and stylish laptop computer designed and manufactured by Apple Inc., renowned for its exceptional blend of form and function. This premium device is the epitome of modern technology and craftsmanship, offering users a remarkable computing experience.</p>
+                        <a target="_blank" href="https://www.computerworld.com/article/3696985/evolution-of-apple-macbook.html" class="product-link">Learn More About the History</a>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="redirectToConfirmation()">Add to Cart</button>
+                        <input type="number" class="quantity-input" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal2" id="modal2-2">
+            <div class="modal-content2">
+                <span class="close-button2">&times;</span>
+                <div class="modal-body">
+                    <img src="images/dell.jpg" alt="Dell Image" class="product-image">
+                    <div class="product-description">
+                        <h2>Dell Laptop $900</h2>
+                        <p>Dell laptops are renowned for their reliable performance, durable build quality, and diverse range of options. They come in various form factors, offer a choice of operating systems, and feature a wide selection of displays, processors, and connectivity options. Whether you're a student, professional, or gamer, Dell has a laptop to meet your needs, emphasizing quality, performance, and design.</p>
+                        <a target="_blank" href="https://www.britannica.com/topic/Dell-Inc" class="product-link">Learn More About the History</a>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="redirectToConfirmation()">Add to Cart</button>
+                        <input type="number" class="quantity-input" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal2" id="modal3-2">
+            <div class="modal-content2">
+                <span class="close-button2">&times;</span>
+                <div class="modal-body">
+                    <img src="images/acer.jpg" alt="Acer Image" class="product-image">
+                    <div class="product-description">
+                        <h2>Acer Laptop $1500</h2>
+                        <p>Acer laptops are known for their affordability, making them a popular choice for budget-conscious consumers. These laptops come in various designs and configurations, including sleek ultrabooks, versatile 2-in-1 convertibles, and gaming laptops. Acer laptops typically offer competitive performance, decent build quality, and a variety of screen sizes and resolutions.</p>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Acer_Inc." class="product-link">Learn More About the History</a>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="redirectToConfirmation()">Add to Cart</button>
+                        <input type="number" class="quantity-input" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
     </footer>
 
     <script src="Project1.js"></script>
+    
 </body>

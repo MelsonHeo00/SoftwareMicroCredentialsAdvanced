@@ -1,3 +1,32 @@
+// Part 1
+const navbarToggle = document.getElementById("navbarToggle");
+const navbarLinks = document.querySelector(".navbar-links");
+const loginLink = document.getElementById("loginLink");
+
+navbarToggle.addEventListener("click", function() {
+    navbarLinks.classList.toggle("show-navbar");
+});
+
+loginLink.addEventListener("click", function(event) {
+    event.preventDefault(); 
+    const modal = document.getElementById("loginModal");
+    modal.style.display = "block";
+});
+
+const loginModal = document.getElementById("loginModal");
+const loginModalClose = document.getElementById("loginModalClose");
+
+loginModalClose.addEventListener("click", function() {
+    loginModal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target === loginModal) {
+        loginModal.style.display = "none";
+    }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const inputFields = document.querySelectorAll(".input-clear-on-focus");
 
@@ -40,43 +69,39 @@ document.addEventListener("DOMContentLoaded", function () {
     signUpButton.classList.add("active");
 });
 
-const icon2 = document.querySelector('.overlay-icon.icon2 img');
-
-let isPaused = false;
-
-icon2.addEventListener('click', function() {
-    if (isPaused) {
-        icon2.style.animationPlayState = 'running';
-    } else {
-        icon2.style.animationPlayState = 'paused';
-    }
-    isPaused = !isPaused;
-});
-
-const modalLinks = document.querySelectorAll(".modal-link");
-const modals = document.querySelectorAll(".modal");
-const closeButton = document.querySelectorAll(".close-button");
-
-modalLinks.forEach(link => {
-    link.addEventListener("click", function(event) {
-        event.preventDefault();
-        const modalId = link.getAttribute("data-modal-id");
-        const modal = document.getElementById(modalId);
+// Part 2
+function showModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
         modal.style.display = "block";
-    });
-});
+    }
+}
 
-closeButton.forEach(button => {
-    button.addEventListener("click", function() {
-        const modal = button.closest(".modal");
+function hideModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
         modal.style.display = "none";
+    }
+}
+
+var modalLinks = document.querySelectorAll(".modal-link1");
+modalLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+        var modalId = this.getAttribute("data-modal-id");
+        showModal(modalId);
     });
 });
 
-window.addEventListener("click", function(event) {
-    modals.forEach(modal => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
+var closeButtons = document.querySelectorAll(".close-button2");
+closeButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        var modalId = this.closest(".modal2").id;
+        hideModal(modalId);
     });
 });
+
+function redirectToConfirmation() {
+    var confirmationPageUrl = "confirmation.html";
+    window.open(confirmationPageUrl, "_blank");
+}
