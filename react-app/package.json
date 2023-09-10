@@ -1,7 +1,7 @@
 {
   "name": "react-app",
   "version": "0.1.0",
-  "homepage": "https://melsonheo00.github.io/SoftwareMicroCredentialsAdvanced/react-app",
+  "homepage": "https://melsonheo00.github.io/SoftwareMicroCredentialsAdvanced",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
