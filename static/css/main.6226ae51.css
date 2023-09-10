@@ -1,0 +1,2 @@
+.app{align-items:center;display:flex;flex-direction:column;justify-content:center;min-height:10vh}.content{text-align:center}nav{background-color:#333}.nav-item{flex:1 1;font-size:20px;padding:20px;text-align:center;transition:background-color .5s ease}.nav-item a{color:#fff;text-decoration:none}.nav-item:hover a{color:#000}.nav-item:hover{background-color:#fff}
+/*# sourceMappingURL=main.6226ae51.css.map*/

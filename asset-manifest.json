@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SoftwareMicroCredentialsAdvanced/static/css/main.6226ae51.css",
+    "main.js": "/SoftwareMicroCredentialsAdvanced/static/js/main.0b62d3a1.js",
+    "index.html": "/SoftwareMicroCredentialsAdvanced/index.html",
+    "main.6226ae51.css.map": "/SoftwareMicroCredentialsAdvanced/static/css/main.6226ae51.css.map",
+    "main.0b62d3a1.js.map": "/SoftwareMicroCredentialsAdvanced/static/js/main.0b62d3a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6226ae51.css",
+    "static/js/main.0b62d3a1.js"
+  ]
+}
