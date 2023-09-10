@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SoftwareMicroCredentialsAdvanced/static/css/main.6226ae51.css",
-    "main.js": "/SoftwareMicroCredentialsAdvanced/static/js/main.0b62d3a1.js",
+    "main.css": "/SoftwareMicroCredentialsAdvanced/static/css/main.f62411d7.css",
+    "main.js": "/SoftwareMicroCredentialsAdvanced/static/js/main.63dd9c7b.js",
     "index.html": "/SoftwareMicroCredentialsAdvanced/index.html",
-    "main.6226ae51.css.map": "/SoftwareMicroCredentialsAdvanced/static/css/main.6226ae51.css.map",
-    "main.0b62d3a1.js.map": "/SoftwareMicroCredentialsAdvanced/static/js/main.0b62d3a1.js.map"
+    "main.f62411d7.css.map": "/SoftwareMicroCredentialsAdvanced/static/css/main.f62411d7.css.map",
+    "main.63dd9c7b.js.map": "/SoftwareMicroCredentialsAdvanced/static/js/main.63dd9c7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6226ae51.css",
-    "static/js/main.0b62d3a1.js"
+    "static/css/main.f62411d7.css",
+    "static/js/main.63dd9c7b.js"
   ]
 }
